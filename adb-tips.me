@@ -1,0 +1,29 @@
+
+# enter user name and password
+
+/Users/user_name/Library/Android/sdk/platform-tools/adb   shell
+input text yourusernmae
+input text password
+
+
+# list connected Devices in System
+
+/Users/user_name/Library/Android/sdk/platform-tools/adb devices
+List of devices attached
+HT4CGJT00348	device
+
+#Install APK File
+/Users/user_name/Library/Android/sdk/platform-tools/adb install app-debug.apk
+Success
+
+
+/Users/user_name/Library/Android/sdk/platform-tools/adb uninstall app-debug.apk
+
+
+#Install in emulator
+
+adb -s emulator-5554 install myapp.apk
+
+
+ #Export Log file
+/Users/user_name/Library/Android/sdk/platform-tools/adb  logcat -d > logcat.txt
